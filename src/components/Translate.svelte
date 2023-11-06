@@ -1,4 +1,7 @@
+<script lang="ts">
+    import { onMount } from "svelte";
 
+   </script>
 
 
 <div class="flex w-full items-center justify-between">
