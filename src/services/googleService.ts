@@ -1,10 +1,10 @@
 
 import { PUBLIC_API_KEY } from '$env/static/public'
 
-export async function google() {
+export async function google(providerFrom: string, queryFrom : string, providerEnd:string){
   const bodyres = {
     "prompt":{
-      "text":"Give me table in SQL"
+      "text":`Translate this code of ${providerFrom} : ${queryFrom} \n to ${providerEnd}`
     }
   }
   const key = PUBLIC_API_KEY
@@ -17,5 +17,5 @@ export async function google() {
     body:JSON.stringify(bodyres)
   })
   const result = await res.json()
-  console.log(result)
+  return result.candidates[0].output
 }
