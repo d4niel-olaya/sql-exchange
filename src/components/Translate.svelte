@@ -8,7 +8,7 @@
         finalQuery = result
     }
     let providerFrom : string = "MySQL"
-    let providerEnd : string = "Postgres"
+    let providerEnd : string = "PostgreSQL"
     let queryFrom : string = ""
     let finalQuery : string = ""
    </script>
@@ -18,8 +18,8 @@
     <div class="w-full p-2">
         <select class="select select-bordered  w-full max-w-xs m-4" bind:value={providerFrom}>
             <option disabled selected>Provider</option>
-            <option value="MySQL" class="option">MySql</option>
-            <option value="Postgres" class="option">Postgres</option>
+            <option value="MySQL" class="option">MySQL</option>
+            <option value="PostgreSQL" class="option">PostgreSQL</option>
             <option  value="Oracle" class="option">Oracle</option>
             <option  value="SQL Server" class="option">SQL Server</option>
           </select>
@@ -31,8 +31,8 @@
     <div class="w-full p-2">
         <select class="select select-bordered w-full max-w-xs  m-4" bind:value={providerEnd}>
             <option disabled selected>Provider</option>
-            <option value="MySQL" class="option">MySql</option>
-            <option value="Postgres" class="option">Postgres</option>
+            <option value="MySQL" class="option">MySQL</option>
+            <option value="PostgreSQL" class="option">PostgreSQL</option>
             <option  value="Oracle" class="option">Oracle</option>
             <option  value="SQL Server" class="option">SQL Server</option>
           </select>
