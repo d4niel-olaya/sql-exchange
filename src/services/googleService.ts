@@ -22,5 +22,6 @@ export async function google(providerFrom: string, queryFrom : string, providerE
     return "Error to translate"
   }
   const result = await res.json()
-  return result.candidates[0].output.trim()
+  const query : string = result.candidates[0].output.trim()
+  return query
 }
