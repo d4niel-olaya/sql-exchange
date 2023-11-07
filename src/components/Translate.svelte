@@ -23,7 +23,7 @@
             <option  value="Oracle" class="option">Oracle</option>
             <option  value="SQL Server" class="option">SQL Server</option>
           </select>
-        <textarea class="textarea textarea-bordered  w-full h-56 mt-4" bind:value={queryFrom}></textarea>
+        <textarea class="textarea textarea-bordered textarea-ghost  w-full h-56 mt-4" bind:value={queryFrom}></textarea>
     </div>
     <div>
         <button class="btn btn-primary" on:click={req}>Translate</button>
@@ -36,6 +36,6 @@
             <option  value="Oracle" class="option">Oracle</option>
             <option  value="SQL Server" class="option">SQL Server</option>
           </select>
-        <textarea class="textarea textarea-bordered w-full h-56 mt-4" bind:value={finalQuery}></textarea>
+        <textarea class="textarea textarea-bordered  textarea-ghost w-full h-56 mt-4" bind:value={finalQuery}></textarea>
     </div>
 </div>
